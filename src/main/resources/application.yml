@@ -1,0 +1,14 @@
+server:
+  port: 8090
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 1234
+    url: jdbc:mysql://localhost:3306/test
+mybatis:
+  mapperLocations: classpath:com/yuchu/mybatis3/mapper/*.xml #配置mybatis配置文件路径
+  typeAliasesPackage: com.yuchu.mybatis3.pojo
+logging:
+  level:
+    com.yuchu.mybatis3.dao: DEBUG
